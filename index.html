@@ -3,18 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Image Gallery</title>
+    <title>For You</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
-        img { max-width: 90%; margin: 20px auto; display: block; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        /* Rose Theme Styling */
+        body {
+            background-color: #0f0505; /* Deep black-red */
+            color: #e6b3b3; /* Soft rose pink text */
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-style: italic;
+            border-bottom: 1px solid #5c1a1a;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            border: 1px solid #3d1212;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            border-color: #9e2a2a;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Site</h1>
-    <img src="IMG_20260206_021621.jpg" alt="Image 1">
-    <img src="IMG_20260206_021634.jpg" alt="Image 2">
-    <img src="IMG_20260206_021649.jpg" alt="Image 3">
-    <img src="IMG_20260206_021656.jpg" alt="Image 4">
+
+    <h1>A Moment in Time</h1>
+
+    <div class="gallery">
+        <img src="IMG_20260206_021634.jpg" alt="Rose Photo 1">
+        <img src="IMG_20260207_002153.jpg" alt="Rose Photo 2">
+        <img src="IMG_20260207_002215.jpg" alt="Rose Photo 3">
+    </div>
+
+    <div class="footer">
+        Created with ❤️
+    </div>
+
 </body>
 </html>
-
